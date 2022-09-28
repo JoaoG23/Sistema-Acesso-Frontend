@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        main{
+            text-align: left;
+            background-color: rgb(51, 235, 186);
+            color: rgb(45, 45, 45);
+            margin: auto;
+            padding: 40px;
+            border-radius: 50px;
+        }
+        section{
+            
+            padding: 30px;
+            margin: auto;
+        }
+
+    </style>
+    
+    <title>Email</title>
+</head>
+<body>
+    <main>
+        <h1>Olá, ${login} meu caro</h1>
+        <h2>Tudo bem?! </h2><h4>Você foi cadastrado no Sistema de Segurança e Controle de Acessos João Acesso </h4><h5>Aqui abaixo terá algumas informações sigilosas do acesso ao sistema tome cuidado</h5>
+        <b>Seu usuário é : </b>${login}
+        <b>Sua senha  é : </b>${senha}
+    </main>
+    <section>
+        <p>Guarde ela bem guardada!</p>
+        <b><i>A equipe do Sistema João Acesso agradeçe !</i></b>
+        <i>Atenciosamente</i>
+        <div>
+            <img width='120px' height='120px' src='https://raw.githubusercontent.com/JoaoG23/Joao-Acesso/main/Documents/Assets/logo.png'>
+        </div>
+    </section>
+</body>
+</html>

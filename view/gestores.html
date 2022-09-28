@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/icons/logo-sistema-joao-acesso.svg">
+    <script type="module" src="./Scripts/Controller/GestoresController.js" defer ></script>
+
+    <script type="module" src="./Scripts/Services/MobileServices.js" defer ></script>
+
+    <title>Gestores</title>
+</head>
+
+<body>
+
+        <div id="botao_mobile" class="btn-mobile roxo ">&#9776;</div>
+
+    <div root-modal="modal">
+    <!-- ==== modais =====     -->
+    </div>
+
+    <main class="container-grid col-1-3 roxo-claro altura-total ">
+
+
+        <nav class="roxo side-bar esconder ">
+            <section>
+                <header class="header-side-bar branco">
+                    <h3 id="nomeDoUsuario">Sem usuario</h3>
+                    <img src="./Assets/icons/logado_roxo.svg">
+                </header>
+                <ul class="my-2 m-esquerda-3">
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/home_roxo.svg"><a
+                            href="./home.html">Página Inicial</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/person_roxo.svg"><a
+                            href="./usuarios.html">Usuários</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/gestores_roxo.svg"><a
+                            href="./gestores.html">Gestores de Sistema</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/acessos_roxo.svg"><a
+                            href="./acessos.html">Fluxo de Acessos</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/relatorio_roxo.svg"><a
+                            href="./relatorios.html">Relatórios</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/configuracoes_roxo.svg"><a
+                            href="./configuracao.html">Configurações</a></li>
+                    <li id="sair_side_bar" class="container-flex center-v lista-style esconder-botaoSair"><a> ◀ Sair Menu</a></li>
+                </ul>
+            </section>
+
+            <section class="container-flex linha linha-direita m-2">
+                <a logout="logout" href="/"class="btn branco"><img src="./Assets/icons/saida_roxo.svg"></a>
+            </section>
+        </nav>
+
+        <section class="container-flex coluna m-2 ">
+            <nav class="redondo-4 cartao branco m-2 container-flex nas-extremidades center-v">
+                <h3>Lista Gestores de sistema</h3>
+                <input class="input-style tamanho-300" type="search" placeholder="Busque pelo nome do Gestor">
+            </div>
+            <div class="container-flex lacuna-20">
+                <button class="btn-pequeno verdinho texto-branco"><a href="./adicionar_gestor.html"><img src="./Assets/icons/adicionar.svg"></a></button>
+                <button class="btn-pequeno verm texto-branco"><a href="./home.html"><img src="./Assets/icons/sair_nav.svg"></a></button>
+            </nav>
+            <section root="root" class="container-flex m-2 lacuna-10">
+                <!-- ======= Dados Gestor back end ========= -->
+
+            </section>
+            <footer>
+
+                <div class="container-flex center-col">
+                    <button class="btn roxo">+</button>
+                    <button class="btn">1</button>
+                    <button class="btn roxo">></button>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+</body>
+
+</html>

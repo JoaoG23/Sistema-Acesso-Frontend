@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/icons/concluido.svg">
+    <script type="module" src="./Scripts/Controller/indexController.js" defer ></script>
+
+    <title>Login</title>
+</head>
+<body>
+    <!-- -------- Modais------ -->
+    <section id="modalSuccess" class="fundo esconder-modal ">
+        <div class="modal">
+             <img src="./Assets/icons/concluido.svg">
+            <h2>Logado</h2>
+            <div id="sucessoDadosServidor">
+
+            </div>
+        </div>
+    </section>
+    <section id="modalLoading" class="fundo esconder-modal ">
+        <div class="modal">
+            <h2>Carregando.. </h2>
+            <div class="containerSpinner">
+         
+                <div class="fundoCirculoSpinner">
+                    <div class="cursorSpinner"></div>
+                    <div class="meioSpinner">
+        
+                    </div>
+                </div>
+            <div id="sucessoDadosServidor">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="modalErro" class="fundo esconder-modal">
+        <div class="modal">
+            <img src="./Assets/icons/paradoAi.svg">
+            <h2>Login Invalido</h2>
+            <div id="erroDadosServidor">
+
+            </div>
+            <!-- ----- botao remover modal ----- -->
+            <button class="btn fechar_modal fonte-grande px-2">
+                &#10006;
+            </button>
+        </div>
+    </section>
+    <!-- -------- Modais------ -->
+    
+    <main class="container-grid col-2-1 roxo-claro">
+
+        <section class="container-pagina-login-logo">
+            <div>
+            <img src="./Assets/icons/logo-sistema-joao-acesso.svg"/>
+            <h1 class="fonte-extragrande texto-verdeescuro fonte-centralizada" >João Acesso</h1>
+            <h3  class="fonte-centralizada">Todo acesso em um so local</h3>
+        </div>
+    </section>
+    
+    <section class='container-flex coluna lacuna-05 center-col roxo px-3 altura-total redondo-4'>
+            <section class="container-flex coluna center-v">
+                <img src="./Assets/icons/person_white_48dp.svg"/>
+                <p class="texto-branco">Bem vindo ao Sistema João Acesso</p>
+            </section>
+            
+            <form class='container-grid '>
+                <label class="texto-branco">Login</label>
+
+                <input id="login" class='input-style-inicial' type="text" >
+
+                <label class="texto-branco">Senha</label>
+                
+                <input id="senha" class='input-style-inicial' type="password" >
+
+                <span id="msgValidacao" class="alerta nao-visivel">Senha ou Usuario não podem estarem vazios 😡!</span>
+
+                <div class='container-grid col-1-2 lacuna-10 my-2'>
+                    <button disabled class='btn verdinho texto-branco' id="logar" >Logar<img src='./Assets/icons/login_black_48dp.svg'/></button>
+                </div>
+            </form>
+                <a class='btn verm texto-branco' href="./registrarse.html">Registre-se aqui</a>
+                <a class="btn amarelo texto-branco" href="./realizar_checkinacesso.html">Area de Checkin <img src="./Assets/icons/areaCheckin.svg"></a>
+        </section>
+    </main>
+    
+</body>
+</html>

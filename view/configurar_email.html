@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/icons/logo-sistema-joao-acesso.svg">
+    <title>Configurar email de envio</title>
+</head>
+
+<body>
+
+        <div id="botao_mobile" class="btn-mobile roxo ">&#9776;</div>
+
+    <main class="container-grid col-1-3 roxo-claro altura-total ">
+
+        
+        <nav class="roxo side-bar esconder ">
+            <section>
+                <header class="header-side-bar branco">
+                    <h3 id="nomeDoUsuario">Sem usuario</h3>
+                    <img src="./Assets/icons/logado_roxo.svg">
+                </header>
+                <ul class="my-2 m-esquerda-3">
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/home_roxo.svg"><a
+                            href="./home.html">Página Inicial</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/person_roxo.svg"><a
+                            href="./usuarios.html">Usuários</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/gestores_roxo.svg"><a
+                            href="./gestores.html">Gestores de Sistema</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/acessos_roxo.svg"><a
+                            href="./acessos.html">Fluxo de Acessos</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/relatorio_roxo.svg"><a
+                            href="./relatorios.html">Relatórios</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/configuracoes_roxo.svg"><a
+                            href="./configuracao.html">Configurações</a></li>
+                    <li id="sair_side_bar" class="container-flex center-v lista-style esconder-botaoSair"><img src="./Assets/icons/saida_roxo.svg"><a> ◀ Sair Menu</a></li>
+                </ul>
+            </section>
+
+            <section class="container-flex linha linha-direita m-2">
+                <a logout="logout" href="/"class="btn branco"><img src="./Assets/icons/saida_roxo.svg"></a>
+            </section>
+        </nav>
+
+        <section class="container-flex coluna m-2 ">
+            <nav class="redondo-4 cartao branco m-2 container-flex nas-extremidades center-v">
+                <h3>Dados de configuracao de Email</h3>
+                <div class="container-flex lacuna-20">
+                    <button class="btn-pequeno verm texto-branco"><a href="./configuracao.html"><img src="./Assets/icons/sair_nav.svg"></a></button>
+                </div>
+            </nav>
+            <form class="cartao container-flex ao-redor branco p-3 m-2">
+                <div class="container-grid col-2 lacuna-10">
+                    <fieldset class="container-grid lacuna-10">
+
+                        <h2>Dados</h2>
+                        <div>
+                            <label>Servidor</label>
+                            <input class="input-style tamanho-300" type="text" required placeholder="Digite o endereço do servidor">
+                        </div>
+                        <div>
+                            <label>Porta</label>
+                            <input class="input-style tamanho-300" type="text" required placeholder="Digite a porta">
+                        </div>
+                        <div>
+                            <label>Endereço STMP</label>
+                            <input class="input-style tamanho-300" type="text" required placeholder="Digite a STMP">
+                        </div>
+                        <div>
+                            <label>Senha</label>
+                            <input class="input-style tamanho-300" type="text" required placeholder="Digite a senha">
+                        </div>
+                        <div>
+                            <label>Endereço</label>
+                            <input class="input-style tamanho-300" type="text" required placeholder="Digite a Email de envio">
+                        </div>
+                    </fieldset>
+                </div>
+                        <button class="btn-pequeno verdinho texto-branco p-3"><img
+                                src="./Assets/icons/salvar.svg">Salvar</button>
+            </form>
+
+        </section>
+    </main>
+<script src="./Scripts/Services/Services.js"></script>
+</body>
+
+</html>

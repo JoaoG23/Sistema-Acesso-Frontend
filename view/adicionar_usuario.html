@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/icons/logo-sistema-joao-acesso.svg">
+
+    <script type="module" src="./Scripts/Services/MobileServices.js" defer ></script>
+
+    <title>Adicionar Usuario</title>
+</head>
+
+<body>
+
+        <div id="botao_mobile" class="btn-mobile roxo ">&#9776;</div>
+
+
+    <div root-modal="modal"></div>
+    <main class="container-grid col-1-3 roxo-claro altura-total ">
+
+        <nav class="roxo side-bar esconder ">
+            <section>
+                <header class="header-side-bar branco">
+                    <h3 id="nomeDoUsuario">Sem usuario</h3>
+                    <img src="./Assets/icons/logado_roxo.svg">
+                </header>
+                <ul class="my-2 m-esquerda-3">
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/home_roxo.svg"><a
+                            href="./home.html">Página Inicial</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/person_roxo.svg"><a
+                            href="./usuarios.html">Usuários</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/gestores_roxo.svg"><a
+                            href="./gestores.html">Gestores de Sistema</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/acessos_roxo.svg"><a
+                            href="./acessos.html">Fluxo de Acessos</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/relatorio_roxo.svg"><a
+                            href="./relatorios.html">Relatórios</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/configuracoes_roxo.svg"><a
+                            href="./configuracao.html">Configurações</a></li>
+                    <li id="sair_side_bar" class="container-flex center-v lista-style esconder-botaoSair"><a> ◀ Sair Menu</a></li>
+                </ul>
+            </section>
+
+            <section class="container-flex linha linha-direita m-2">
+                <a logout="logout" href="/"class="btn branco"><img src="./Assets/icons/saida_roxo.svg"></a>
+            </section>
+        </nav>
+
+        <section class="container-flex coluna m-2 nas-extremidades">
+            <nav class="redondo-4 cartao branco m-2 container-flex nas-extremidades center-v">
+                <h3>Adicionar Usuario</h3>
+                <div class="container-flex lacuna-20">
+                    <button class="btn-pequeno verm texto-branco"><a href="./usuarios.html"><img
+                                src="./Assets/icons/sair_nav.svg"></a></button>
+                </div>
+            </nav>
+            <div class="cartao container-flex ao-redor branco p-3 m-2">
+                <div class="container-grid col-2 lacuna-10">
+                    <fieldset>
+                            <h2>Dados Pessoais</h2>
+                            <div>
+                                <label>Nome : </label>
+                                <input name="nome_usuario" class="input-style tamanho-300" type="text" requerido="requirido" >
+                            </div>
+                            <div>
+                                <label>Sobrenome : </label>
+                                <input name="sobrenome_usuario" class="input-style tamanho-300" type="text" requerido="requirido" >
+                            </div>
+                            <div>
+                                <label>Tipo de documento : </label>
+                                    <select class="input-style">
+                                        <option selected value="CPF">CPF</option>
+                                        <option value="CNPJ">CNPJ</option>
+                                        <option value="RG">RG</option>
+                                    </select>
+                                <!-- <input name="tipo_documento_usuario" class="input-style" type="text" value="$tipo_documento_usuario"> -->
+                            </div>
+                            <div>
+                                <label>Numero de documento : </label>
+                                <input name="numero_documento_usuario" class="input-style" type="text" requerido="requirido" >
+                            </div>
+                            <div>
+                                <label>Tel : </label>
+                                <input name="telefone_usuario" class="input-style" type="text" placeholder="(31)0000-0000" requerido="requirido" >
+                            </div>
+                            <div>
+                                <label>Email : </label>
+                                <input name="email_usuario" class="input-style" type="text" requerido="requirido" >
+                            </div>
+                            <div>
+                                <label>Empresa : </label>
+                                <input name="empresa_usuario" class="input-style" type="text" >
+                            </div>
+                        </fieldset>
+                
+                    <div class="m-auto">
+                        <img src="./Assets/icons/sem-foto.svg">
+                        <div>
+                            <button class="SalvarDados btn-pequeno verdinho texto-branco p-3"><img
+                                src="./Assets/icons/salvar.svg">Salvar</button>
+                        
+                        </div>
+                    </div>
+                
+                        
+                
+                        <fieldset>
+                            <h3>Dados da Credencial</h3>
+                            <div>
+                                <label>Credencial :</label>
+                                <button id="gerarCredencial" class="btn roxo">Gerar aleatória</button>
+                                <input name="crendencial_usuario" class="input-style" type="text" placeholder="Coloque aqui sua credencial!" requerido="requirido">
+                            </div>
+                            <div>
+                                <label>Situacao : </label>
+                                <select class="input-style" requerido="requirido">
+                                    <option value="ATIVO">Ativo</option>
+                                    <option value="INATIVO">Inativo</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Data inicial :</label>
+                                <input name="data_inicial_credencial" class="input-style" type="datetime-local" requerido="requirido" >
+                            </div>
+                            <div>
+                                <label>Data de Vencimento :</label>
+                
+                                <input name="data_final_credencial" class="input-style" type="datetime-local" requerido="requirido">
+                            </div>
+                            <div>
+                                <label>Creditos :</label>
+                                <input name="credito_credencial" class="input-style" type="number" requerido="requirido" value="1000">
+                            </div>
+                            <div>
+                                <label> </label>
+                                <label></label>
+                            </div>
+                            <div>
+                                <label>Tempo de Afastamento</label>
+                                <input name="fg_tempo_afastamento" class="input-style" type="text" requerido="requirido" value="0" >
+                            </div>
+                        </fieldset>
+                
+                    <details class="container-flex lacuna-10">
+                        <summary class="btn-pequeno tamanho-100">Dados Opcionais &#9660;</summary>
+                        <div>
+                            <div>
+                                <label>Tipo usuario : </label>
+                                <input name="tipo_usuario" class="input-style" type="text" value="Comum">
+                            </div>
+                            <div>
+                                <label>Setor: </label>
+                                <input name="setor_usuario" class="input-style" type="text">
+                            </div>
+                            <div>
+                                <label>País: </label>
+                                <input name="pais_usuario" class="input-style" type="text">
+                            </div>
+                            <div>
+                                <label>Estado: </label>
+                                <input name="pais_usuario" class="input-style" type="text" >
+                            </div>
+                            <div>
+                                <label>Cidade: </label>
+                                <input name="pais_usuario" class="input-style" type="text" >
+                            </div>
+                            <div>
+                                <label>Rua: </label>
+                                <input name="rua_usuario" class="input-style" type="text" >
+                            </div>
+                            <div>
+                                <label>N: </label>
+                                <input name="numero_usuario"  class="input-style" type="text" >
+                            </div>
+                        </div>
+                    </details>
+                    </div>
+
+            </div>
+
+        </section>
+    </main>
+    <script type="module" src="./Scripts/Controller/adicionarUsuarioController.js"></script>
+</body>
+
+</html>

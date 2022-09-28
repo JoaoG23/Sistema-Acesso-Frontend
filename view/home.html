@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/icons/logo-sistema-joao-acesso.svg">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" defer></script>
+    
+    <script type="module" src="./Scripts/Controller/HomeController.js" defer ></script>
+    <script type="module" src="./Scripts/Services/MobileServices.js" defer ></script>
+    
+    <title>Pagina Inicial</title>
+</head>
+
+<body>
+        <div id="botao_mobile" class="btn-mobile roxo ">&#9776;</div>
+
+    <div root-modal="modal">
+        <!-- ----- Modal ------ -->
+    </div>
+    <main class="container-grid col-1-3 roxo-claro altura-total">
+
+        <nav class="roxo side-bar esconder ">
+            <section>
+                <header class="header-side-bar branco">
+                    <h3 id="nomeDoUsuario">Sem usuario</h3>
+                    <img src="./Assets/icons/logado_roxo.svg">
+                </header>
+                <ul class="my-2 m-esquerda-3">
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/home_roxo.svg"><a
+                            href="./home.html">Página Inicial</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/person_roxo.svg"><a
+                            href="./usuarios.html">Usuários</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/gestores_roxo.svg"><a
+                            href="./gestores.html">Gestores de Sistema</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/acessos_roxo.svg"><a
+                            href="./acessos.html">Fluxo de Acessos</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/relatorio_roxo.svg"><a
+                            href="./relatorios.html">Relatórios</a></li>
+                    <li class="container-flex center-v lista-style"><img src="./Assets/icons/configuracoes_roxo.svg"><a
+                            href="./configuracao.html">Configurações</a></li>
+                    <li id="sair_side_bar" class="container-flex center-v lista-style esconder-botaoSair"><a> ◀ Sair Menu</a></li>
+                </ul>
+            </section>
+
+            <section class="container-flex linha linha-direita m-2">
+                <a logout="logout" href="/"class="btn branco"><img src="./Assets/icons/saida_roxo.svg"></a>
+            </section>
+        </nav>
+
+        <section class="container-flex coluna center-v ">
+            <article class="quadro-home-cards">
+
+                <div>
+
+                    <div class="minicartao amarelo ">
+                        <img src="./Assets/icons/calendario_branco.svg">
+                    </div>
+                    <div class="mini-container branco ">
+                        <h3>Quantos Acessos por mês</h3>
+                        <h2 root-mes="mes"></h2>
+                    </div>
+                </div>
+                <div >
+
+                    <div class="minicartao verdinho">
+                        <img src="./Assets/icons/time_branco.svg">
+                    </div>
+                    <div class="mini-container branco ">
+                        <h3>Quantos nas Ultimas 24 Horas</h3>
+                        <h2 root-hoje="hoje">Vazio</h2>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="minicartao verm">
+                        <img src="./Assets/icons/person_branco.svg">
+                    </div>
+                    <div class="mini-container branco ">
+                        <h3>Quem acesso por ultimo</h3>
+                        <h4 root-ultimo="ultimo" >sem Login</h4>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class=" container-flex lacuna-20 m-2">
+                <div class="redondo-4 cartao branco" >
+                    <h1 class="fonte-centralizada">Situação por acesso</h1>
+                    <div id="partilhaPorSitucaoAcesso" width="auto" height="auto">
+                    </div>
+                </div>
+                <div class="redondo-4 cartao branco " >
+                    <h1 class="fonte-centralizada"> Quantidade de acessos nos ultimos 4 Meses</h1>
+                        <div id="area4Meses" width="auto" height="auto"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

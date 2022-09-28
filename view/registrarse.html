@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/icons/logo-sistema-joao-acesso.svg">
+ <script type="module" src="./Scripts/Controller/registrarGestorController.js" defer ></script>
+    
+    
+    <!-- <script type="module" src="./Scripts/Services/MobileServices.js" defer ></script> -->
+    
+    <title>Registrar Gestor</title>
+</head>
+
+<body>
+    
+    <div root-modal="modal">
+        <!-- ----- Modal ----- -->
+    </div>
+    <main class="container-grid col-1-3 roxo altura-total ">
+        <img class='imgRegister'src="./Assets/security.webp">
+
+        <section class="container-flex coluna m-2 ">
+            <nav class="redondo-1 cartao roxo-sem-degrede m-2 container-flex nas-extremidades center-v">
+                <img class="imgLogoRegistro" src="./Assets/icons/logo-sistema-joao-acesso.svg">
+                <h5 class="texto-branco">Junte-se ao nosso time de Gestores do nosso Sistema!</h5>
+                <div class="container-flex lacuna-20">
+                    <button class="btn-pequeno verm texto-branco"><a href="./index.html"><img src="./Assets/icons/sair_nav.svg"></a></button>
+                </div>
+            </nav>
+            <form class="cartao redondo-1 container-flex ao-redor roxo-sem-degrede p-3 m-2">
+                <div class="container-grid col-2 lacuna-10">
+                    <fieldset class="">
+                        
+                        <h2 class="texto-branco">Inscreva e faça o seu teste</h2>
+                        <div>
+                            <input id="login" class="input-style tamanho-300" type="text" required placeholder="Usuário">
+                        </div>
+                        <div>
+                            <input id="senha" class="input-style tamanho-300 " type="text" required placeholder="Senha">
+                        </div>
+                        <div>
+                            <input id="novaSenha" class="input-style tamanho-300 " type="text" required placeholder="Senha Novamente" >
+                            <span id="SenhaIguais" class=" alerta nao-visivel">As senha acima são iguais !</span>
+                        </div>
+                        <div>
+                            <input id="email" class="input-style tamanho-300 " type="email" required placeholder="Email">
+                            <span class=" alerta validacao nao-visivel">Os campos não podem vazios e menos 3 caracteres !</span>
+                        </div>
+           
+                    </fieldset>
+                    
+                </div>
+                        <button class="btn verdinho texto-branco p-2 SalvarDados" >Inscrever</button>
+                    </form>
+                    
+                </section>
+            </main>
+            
+        </body>
+        
+        </html>
