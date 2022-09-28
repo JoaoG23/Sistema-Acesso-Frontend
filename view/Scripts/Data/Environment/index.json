@@ -1,4 +1,4 @@
 {
-    "endpoint":"http://192.168.100.7",
+    "endpoint":"https://joao-acesso.vercel.app/api",
     "port":5000
 }
