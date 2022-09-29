@@ -27,10 +27,9 @@
 
 Alterações   | Data | Versão
 :---------: | :------: | :------:
-Criação do Front-end indempendente | 29/09/22 | 1.0.1 
+Separação do Front-end da Aplicação principal | 29/09/22 | 1.0.1 
 
 ### 👥 Principais Tecnologia usadas até o momento
-#### 🧑‍💻 No front-end
 
 <div>
         <img width="70px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
@@ -68,11 +67,15 @@ Novamente, como sempre como nos projetos anteriores utilizei arquitura **MVC**
 3. Entre no arquivo index.js
 4. Mude endpoint para ip da sua maquina local ou outro endpoint
 5. Instale o Backend
+6. <a href='https://github.com/JoaoG23/Joao-Acesso'>Clique aqui para ver o manual de instalação<a>
+
 
 
 <h2 id='usar'><b>4- Como usar 👩‍💻</b></h2>
+
 Clique logo abaixo para ver o tutorial sobre o sistema.
-<h3><a href="https://pr-joao-acesso.herokuapp.com">Clique aqui para Teste Tempo Real 🥳👈</a><h4>
+
+<h3><a href="https://sistema-joao-acesso.netlify.app">Clique aqui para Teste Tempo Real 🥳👈</a></h3>
 
 <details>
   <summary><b>Veja mais sobre ...</b></summary>
@@ -93,7 +96,7 @@ Na primeira tela e a de login.
 <img align=center src="./Documents/Assets/salva.png">
 
 3 - Digite senha e login, para o primeiro acesso.
-<h3><a href="https://pr-joao-acesso.herokuapp.com">Clique aqui para Teste Tempo Real 🥳👈</a><h4>
+<h3><a href="https://sistema-joao-acesso.netlify.app">Clique aqui para Teste Tempo Real 🥳👈</a><h4>
 
 ### Conceito inicial 💡
 
