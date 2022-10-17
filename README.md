@@ -96,7 +96,7 @@ Na primeira tela e a de login.
 <img align=center src="./Documents/Assets/salva.png">
 
 3 - Digite senha e login, para o primeiro acesso.
-<h3><a href="https://sistema-joao-acesso.netlify.app">Clique aqui para Teste Tempo Real 🥳👈</a><h4>
+<h3><a href="https://sistema-controle-acesso.netlify.app">Clique aqui para Teste Tempo Real 🥳👈</a><h4>
 
 ### Conceito inicial 💡
 
