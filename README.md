@@ -67,7 +67,7 @@ Novamente, como sempre como nos projetos anteriores utilizei arquitura **MVC**
 3. Entre no arquivo index.js
 4. Mude endpoint para ip da sua maquina local ou outro endpoint
 5. Instale o Backend
-6. <a href='https://github.com/JoaoG23/Joao-Acesso'>Clique aqui para ver o manual de instalação<a>
+6. <a href='https://github.com/JoaoG23/Sistema-Acesso-API'>Clique aqui para ver o manual de instalação<a>
 
 
 
