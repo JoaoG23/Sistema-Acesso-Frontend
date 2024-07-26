@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  frontend:
+    build: "./"
+    container_name: front-acesso-container
+    image: front-acesso-image
+    volumes:
+      - ./view:/usr/share/nginx/html
+      - ./view:/nginx.config /etc/nginx/conf.d/default.conf
+    ports:
+      - "84:80"
+    environment:
+      - NGINX_HOST=wow.com
+      - NGINX_PORT=80
+    networks:
+      - acesso-network
+networks:
+  acesso-network:
